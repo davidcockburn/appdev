@@ -1,5 +1,6 @@
 class SubcontractorsController < ApplicationController
   before_action :set_subcontractor, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /subcontractors
   # GET /subcontractors.json
